@@ -1,0 +1,156 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* height: 100vh; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 120%;
+}
+
+p {
+    line-height: 180%;
+    font-size: 14px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-spacebetween {
+    justify-content: space-between;
+}
+
+.spacer20 {
+    margin: 20px 0 0;
+}
+
+.spacersection {
+    padding: 2% 0;
+}
+
+.navbar .navbar-nav .logo h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navbar-nav .navbar-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navbar .navbar-nav .navbar-status {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navbar .navbar-nav .navbar-menu a:hover {
+    font-weight: bold;
+}
+
+header {
+    background: black;
+}
+
+main {
+    flex: 1;
+    min-height: 80vh;
+    /* Atur ketinggian minimum elemen <main> */
+    overflow-y: auto;
+    /* Tambahkan scrolling jika kontennya lebih besar dari tinggi minimum */
+}
+
+footer {
+    background: black;
+    color: white;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table caption {
+    caption-side: top;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+/* Styling untuk baris genap */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover efek pada baris tabel */
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-nav,
+    .navbar-menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar-menu,
+    .navbar-status {
+        margin-top: 10px;
+        /* Atur jarak antar elemen navbar pada layar kecil */
+    }
+}
